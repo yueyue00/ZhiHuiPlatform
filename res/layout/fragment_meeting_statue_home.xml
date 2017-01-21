@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_bg"
+    >
+    <LinearLayout 
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+         >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="到会"
+        android:textColor="@color/main_color"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="现况"
+        android:textColor="@color/tv_gray_color"/>
+    </LinearLayout>
+  <!--  <HorizontalScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >-->
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" 
+         android:gravity="center"
+         
+         > 
+     
+    <lecho.lib.hellocharts.view.ColumnChartView
+    android:id="@+id/columnChartView_home"
+    android:layout_width="300dp"
+    android:layout_height="130dp" 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    
+    />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="20dp"
+    >
+    <ImageView 
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/btn_meetingsch_blue"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#90000000"
+        android:text="到会人数达到100人以上"
+        android:layout_marginLeft="5dp"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="20dp"
+    >
+    <ImageView 
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/btn_meetingsch_gray"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#90000000"
+        android:text="到会人数达到100人或者100人以下"
+        android:layout_marginLeft="5dp"/>
+</LinearLayout>
+ </LinearLayout>
+<!--</HorizontalScrollView> -->
+</LinearLayout>

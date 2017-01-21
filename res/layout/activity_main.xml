@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/home_left_bg" >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/home_left_title_bottom"
+            android:layout_marginTop="@dimen/home_left_title_top"
+            android:text="文博会指挥调度平台"
+            android:textColor="@color/home_top_bg"
+            android:textSize="@dimen/home_left_title_tvsize" />
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/title_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:id="@+id/ll_backToHome"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_left_layout_height"
+            android:layout_below="@id/line_1"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/home_left_icon_margin"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/home_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/btn_home"
+                android:gravity="center"
+                android:padding="7dp"
+                android:paddingLeft="10dp"
+                android:text="返回首页"
+                android:textColor="@color/white"
+                android:textSize="@dimen/home_lvitem_tvsize" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/home_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_backToHome"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/translate" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:background="@color/lightcyan" />
+
+</LinearLayout>

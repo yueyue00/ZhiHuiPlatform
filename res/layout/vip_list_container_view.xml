@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:background="#bcbcbc" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/vipContainner_ll_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/vipContainer_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="false"
+                android:text="参加文博会开幕式参加文博会开幕式参加文博会开幕式参加文博会开幕式"
+                android:textColor="@color/vip_text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/vipContainer_tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="详情"
+                android:textColor="#fd914c"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_meetingschdule_address" />
+            <!-- android:textColor="#bcbcbc" -->
+
+            <TextView
+                android:id="@+id/vipContainer_tv_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="敦煌国际会展中心主报告厅"
+                android:textColor="#fd914c" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_meetingschdule_time" />
+
+            <TextView
+                android:id="@+id/vipContainer_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:text="09:00 - 11:00"
+                android:textColor="#fd914c" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vipContainer_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="早晨8:30由华夏国际大酒店出发，乘车前往国际会展中心。您乘坐的是5号车辆，车牌号:甘A.88888,随车服务人员是：李彪 18001040951"
+            android:textColor="@color/vip_text_color"
+            android:textSize="16sp"
+            android:visibility="gone" />
+        <!--
+         <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bcbcbc"
+        />
+        -->
+    </LinearLayout>
+
+</LinearLayout>

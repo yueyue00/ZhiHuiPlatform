@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/selector_importguestlv_item"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/guest_icon"
+        android:layout_width="@dimen/manage_lv_icon_height"
+        android:layout_height="@dimen/manage_lv_icon_height"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/guest_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/importguest_lvitem_text_left"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:text="重要嘉宾1"
+        android:textSize="@dimen/importguest_lvitem_job_tvsize" />
+
+    <LinearLayout
+        android:id="@+id/guest_right_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/importguest_lvitem_right"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/guset_zhiwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:lines="1"
+            android:text="xx局长"
+            android:textColor="@color/home_title_bg"
+            android:textSize="@dimen/importguest_lvitem_job_tvsize" />
+
+        <TextView
+            android:id="@+id/guest_workplace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:lines="1"
+            android:text="xx市xx局"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/importguest_lvitem_wrokpl_tvsize" />
+    </LinearLayout>
+
+</LinearLayout>

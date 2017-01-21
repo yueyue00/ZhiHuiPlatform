@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    
+    >
+    <!-- android:background="#111821" -->
+<ImageView
+    android:id="@+id/li_iv_progressState"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/home_progressState"
+    android:src="@drawable/home_over"
+    />
+    <ImageView
+        android:id="@+id/li_iv_over_arrow"
+        android:layout_width="@dimen/home_arrow_width"
+        android:layout_height="@dimen/home_arrow_height"
+        android:src="@drawable/home_blue_arrow"
+        />
+    <TextView
+        android:id="@+id/li_tv_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/horional_tvtitle"
+        android:text="开幕式"
+        android:textSize="@dimen/horional_text"
+        android:textColor="@color/text_dark_blue"
+        android:paddingLeft="@dimen/horizonal_paddingLeft"
+        android:paddingRight="@dimen/horizonal_paddingRight"
+        android:gravity="center"
+        />
+    <!-- android:background="@drawable/home_now_progress" -->
+    <TextView
+        android:id="@+id/li_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_text_time"
+        android:text="09:00"
+        android:layout_marginTop="@dimen/horizaon_tvTime_marginT"
+        />
+
+</LinearLayout>

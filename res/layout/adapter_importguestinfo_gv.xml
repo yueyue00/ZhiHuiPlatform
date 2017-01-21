@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/vip_info_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/home_title_bg"
+        android:textSize="@dimen/importguest_lvitem_job_tvsize" />
+
+    <TextView
+        android:id="@+id/vip_info_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="@dimen/importguest_lvitem_wrokpl_tvsize" />
+
+</LinearLayout>

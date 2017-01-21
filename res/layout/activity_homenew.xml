@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg" >
+
+    <ImageView
+        android:id="@+id/iv_homeHead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_ivHead"
+        android:layout_marginLeft="@dimen/home_ivHead_marginL"
+        android:layout_marginRight="@dimen/home_ivHead_marginG"
+        android:src="@drawable/home_head" />
+
+    <TextView
+        android:id="@+id/tv_homeTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/home_text1_marginT"
+        android:gravity="center_horizontal"
+        android:text="大数据论坛（敦煌）国际文化博览会"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/home_ivHead_text2" />
+
+    <TextView
+        android:id="@+id/tv_homeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_homeTitle1"
+        android:layout_marginTop="@dimen/home_text2_marginT"
+        android:gravity="center_horizontal"
+        android:text="中医药文化和健康产业国际论坛会务指挥平台"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/home_ivHead_text2"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/home_xiaoshibao"
+        android:layout_width="@dimen/home_xiaoshibao_width"
+        android:layout_height="@dimen/home_xiaoshibao_height"
+        android:layout_marginTop="@dimen/home_xiaoshibao_marginT"
+        android:background="@drawable/home_xiaoshibao_selector" />
+    <!-- 标题下面的部分 -->
+
+    <LinearLayout
+        android:id="@+id/linaer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_homeHead"
+        android:layout_marginBottom="@dimen/home_linear1_marginB"
+        android:layout_marginLeft="@dimen/home_left_new_marginL"
+        android:layout_marginRight="@dimen/home_right_new_marginR"
+        android:orientation="horizontal" >
+
+        <!-- 左侧部分 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.24"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/ll_homeLeftFrame"
+                layout="@layout/homenew_left_top" />
+
+            <include layout="@layout/homenew_left_bottom" />
+        </LinearLayout>
+        <!-- 中间部分 -->
+
+        <LinearLayout
+            android:layout_width="@dimen/home_middle_linear_width"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_sframe_middle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+        <!-- 右侧部分 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/ll_homeRightFrame"
+                layout="@layout/homenew_right_top" />
+
+            <include layout="@layout/homenew_right_bottom" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

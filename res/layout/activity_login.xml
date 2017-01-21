@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/wuzhen_login_shurukuang"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/wuzhen_user_name" />
+
+            <TextView
+                android:id="@+id/yonghumingtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:text="用户名："
+                android:textColor="@color/lightgray"
+                android:textSize="16dp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:hint="请输入用户名"
+                android:imeOptions="flagNoExtractUi"
+                android:singleLine="true"
+                android:textColor="@color/lightgray"
+                android:textSize="16dp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/wuzhen_login_shurukuang"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/wuzhen_password" />
+
+                <TextView
+                    android:id="@+id/text_mima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:text="密    码："
+                    android:textColor="@color/lightgray"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+
+                <EditText
+                    android:id="@+id/edit_shurumima"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:hint="请输入密码"
+                    android:imeOptions="flagNoExtractUi"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textColor="@color/lightgray"
+                    android:textSize="16dp"
+                    android:typeface="sans" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@color/btn_denglu_bg"
+            android:clickable="true"
+            android:padding="5dp"
+            android:text="登录界面"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

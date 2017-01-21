@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="beijing">#eeedf2</color>
+    <color name="translate">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="home_left_bg">#383F47</color>
+    <color name="home_top_bg">#64B6C2</color>
+    <color name="home_btn_selected">#323840</color>
+    <color name="carsource_carstate1">#5DC065</color>
+    <color name="carsource_carstate2">#CE6262</color>
+    <color name="home_title_bg">#64B6C2</color>
+    <color name="importguest_richeng">#65D8C9</color>
+    <color name="importguest_select_item">#D0E9ED</color>
+    <color name="btn_denglu_bg">#EB6100</color>
+    <color name="conversition_title_bg">#2385DD</color>
+    <color name="conversition_title_bg1">#409DCE</color>
+    <color name="conversition_title_bg2">#A1D3FF</color>
+    <!-- 指挥平台主要颜色 -->
+    <color name="main_color">#64b6c2</color>
+    <color name="main_gray">#9c9c9e</color>
+    <!-- 文字颜色 -->
+    <color name="tv_gray_color">#90000000</color>
+    <!-- 到会现状 对应gridview的颜色 -->
+    <color name="dhxz_grid_color">#d0e9ed</color>
+    <!-- 视频监控 视频源 背景色 -->
+    <color name="video_source_gray1">#f5f5f5</color>
+    <color name="video_source_gray2">#9f9f9f</color>
+    <!-- 大会日程  radioButton -->
+    <color name="rb_one">#4EEE94</color>
+    <color name="rb_two">#63B8FF</color>
+    <color name="rb_three">#ffffff</color>
+    <!-- 字体颜色 -->
+    <color name="text_blue">#46fcfb</color>
+    <color name="text_green">#43f200</color>
+    <color name="text_yellow">#f6eb03</color>
+    <color name="text_orange">#fe8325</color>
+    <color name="text_red">#ff543d</color>
+    <color name="text_dark_blue">#2e6069</color>
+    <!-- 首页webView的背景 -->
+    <color name="bg_color">#111821</color>
+    <color name="vip_text_color">#686768</color>
+    <color name="xiaoguo_title2_bg">#fec95d</color> <!-- #F99730 -->
+    <!-- new 大会日程 -->
+    <color name="bar_gray">#e0e2e2</color>
+    <color name="bar_green">#78c2cc</color>
+    <color name="bar_lightGreen">#d7f0f2</color>
+    <color name="content_green">#a7dee2</color>
+    <color name="sch_text_gray">#9c9c9e</color>
+    <color name="sch_text_darkGray">#3e4750</color>
+    <color name="sch_text_green">#64b6c2</color>
+    <color name="sch_line_color">#dddfe0</color>
+    <color name="xiaoguo_title_bg">#FEC95D</color>
+    <color name="xiaoguo_contact_textcolor">#3d4d65</color>
+    <color name="xiaoguo_contact_search">#EEEFF2</color>
+    <color name="xiaoguo_contact_bg">#f6b16a</color>
+    <color name="xiaoguo_groupinfo_remove">#e64340</color>
+    <color name="xiaoguo_bg_search_contact">#edeff2</color>
+    <color name="xiaoguo_bg_baidumap_button">#939290</color>
+    <color name="text_details">#686868</color>
+    <color name="zuijinsousuo">#686868</color>
+    <color name="searchhuiyirvfengexian">#b4b4b4</color>
+    <color name="attention">#CCCCCC</color>
+
+</resources>

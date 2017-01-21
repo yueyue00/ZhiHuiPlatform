@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/title_layout" />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/title_layout" 
+        >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!-- title -->
+         <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/video_rtmp_head_height"
+             android:background="@drawable/video_rtmp_head"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:visibility="gone"
+             >
+             <TextView 
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp"
+                 android:layout_weight="1"
+                 android:text="首届丝绸之路（敦煌）国际文化博览会系列活动"
+                 android:textSize="@dimen/video_rtmp_head_text"
+                 android:textColor="@color/white"
+                 android:gravity="center"
+                 />
+             <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="中医药文化和健康产业国际论坛"
+            android:textColor="@color/white"
+            android:gravity="center|top"
+            android:layout_marginTop="@dimen/video_rtmp_head_marginT"
+            android:textSize="@dimen/video_rtmp_text"
+            
+            />
+         </LinearLayout>
+         <!--  全景视频播放 开始 -->
+          <!-- 左上 -->
+         <FrameLayout
+             android:id="@+id/framecontainer1"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1" 
+             android:visibility="visible"
+             >
+             <ImageView 
+                 android:id="@+id/video_iv1"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/home_videobg1"
+                 android:scaleType="fitXY"
+                 android:visibility="gone"
+                 />
+             <!-- rtmp流  播放布局 开始-->
+             <SurfaceView
+            android:id="@+id/SurfaceView1_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" 
+            
+            />
+
+        <LinearLayout
+            android:id="@+id/LoadingView1_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Buffering"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!-- rtmp 流 播放布局结束 -->
+             <!-- <AbsoluteLayout
+                 android:id="@+id/AbsoluteLayout1"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" 
+                 android:visibility="gone">
+             </AbsoluteLayout> -->
+
+             <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp" 
+                 android:orientation="horizontal"
+                 android:layout_alignParentBottom="true"
+                 >
+
+                 
+                   <!-- <Button 
+                     android:id="@+id/touchbutton1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:text="方向感应"
+                     android:textColor="#fff"
+                     android:textSize="14sp"
+                     android:gravity="center"
+                     android:visibility="gone"
+                       />
+                 <SeekBar
+                     android:id="@+id/scrubber1"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="40dp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginLeft="1dip"
+                     android:background="#AA000000"
+                     android:paddingLeft="22dp"
+                     android:paddingRight="22dp"
+                     android:paddingTop="6dp" 
+                     android:visibility="gone"
+                     /> -->
+                 <Button
+                     android:id="@+id/btn_fullScreen1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:gravity="center"
+                     android:text="全屏"
+                     android:textColor="#fff"
+                     android:textSize="14sp"
+                      />
+             </LinearLayout>
+             </RelativeLayout>
+         </FrameLayout>
+        <View 
+             android:layout_width="match_parent"
+             android:layout_height="5dp"/>
+         <!-- 全景视频播放  结束 -->
+         <!-- rtmp流媒体播放 布局开始 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        >
+
+        <SurfaceView
+            android:id="@+id/SurfaceView_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" 
+            
+            />
+
+        <LinearLayout
+            android:id="@+id/LoadingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Buffering"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </FrameLayout>
+    <!-- 结束 -->
+    <!-- 现场直播 text -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <!-- android:layout_height="@dimen/video_rtmp_bottom_height" -->
+        <!--  全景视频播放 开始 -->
+          <!-- 左下 -->
+         <FrameLayout
+             android:id="@+id/framecontainer2"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1" 
+             android:visibility="visible"
+             >
+             <ImageView 
+                 android:id="@+id/video_iv2"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/home_videobg2"
+                 android:scaleType="fitXY"
+                 android:visibility="gone"
+                 />
+             <!-- rtmp流  播放布局 开始-->
+             <SurfaceView
+            android:id="@+id/SurfaceView2_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" 
+            
+            />
+
+        <LinearLayout
+            android:id="@+id/LoadingView2_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Buffering"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!-- rtmp 流 播放布局结束 -->
+             <!-- <AbsoluteLayout
+                 android:id="@+id/AbsoluteLayout2"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:visibility="gone"
+                  >
+             </AbsoluteLayout> -->
+
+             <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp" 
+                 android:orientation="horizontal"
+                 android:layout_alignParentBottom="true"
+                 >
+
+                 
+                   <!-- <Button 
+                     android:id="@+id/touchbutton2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:text="方向感应"
+                     android:textColor="#fff"
+                     android:textSize="14sp"
+                     android:gravity="center"
+                     android:visibility="gone"
+                       />
+                 <SeekBar
+                     android:id="@+id/scrubber2"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="40dp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginLeft="1dip"
+                     android:background="#AA000000"
+                     android:paddingLeft="22dp"
+                     android:paddingRight="22dp"
+                     android:paddingTop="6dp"
+                     android:visibility="gone"
+                      /> -->
+                 <Button
+                     android:id="@+id/btn_fullScreen2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:gravity="center"
+                     android:text="全屏"
+                     android:textColor="#fff"
+                     android:textSize="14sp"
+                      />
+             </LinearLayout>
+             </RelativeLayout>
+         </FrameLayout>
+
+         <!-- 全景视频播放  结束 -->
+        <TextView
+            android:id="@+id/tv_video_link" 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="现场直播"
+            android:textColor="@color/tv_gray_color"
+            android:textSize="@dimen/video_rtmp_bottom_text"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    <!-- webView  视频回放（通过webView加载） -->
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+    <!--  全景视频播放 开始 -->
+          <!-- 右上 -->
+         <FrameLayout
+             android:id="@+id/framecontainer3"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1" 
+             android:visibility="visible"
+             android:layout_marginLeft="5dp"
+             
+             >
+         <ImageView 
+                 android:id="@+id/video_iv3"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/home_videobg3"
+                 android:scaleType="fitXY"
+                 android:visibility="gone"
+                 />
+            <!-- rtmp流  播放布局 开始-->
+             <SurfaceView
+            android:id="@+id/SurfaceView3_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" 
+            
+            />
+
+        <LinearLayout
+            android:id="@+id/LoadingView3_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Buffering"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!-- rtmp 流 播放布局结束 -->
+             <!-- <AbsoluteLayout
+                 android:id="@+id/AbsoluteLayout3"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" 
+                 android:visibility="gone"
+                 >
+             </AbsoluteLayout> -->
+
+            <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp" 
+                 android:orientation="horizontal"
+                 android:layout_alignParentBottom="true"
+                 >
+
+                 
+                   <!-- <Button 
+                     android:id="@+id/touchbutton3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:text="方向感应"
+                     android:textColor="#fff"
+                     android:textSize="14sp"
+                     android:gravity="center"
+                     android:visibility="gone"
+                       />
+                 <SeekBar
+                     android:id="@+id/scrubber3"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="40dp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginLeft="1dip"
+                     android:background="#AA000000"
+                     android:paddingLeft="22dp"
+                     android:paddingRight="22dp"
+                     android:paddingTop="6dp" 
+                     android:visibility="gone"
+                     /> -->
+                 <Button
+                     android:id="@+id/btn_fullScreen3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:gravity="center"
+                     android:text="全屏"
+                     android:textColor="#fff"
+                     android:textSize="14sp"
+                      />
+             </LinearLayout>
+             </RelativeLayout>
+         </FrameLayout>
+         <View 
+             android:layout_width="match_parent"
+             android:layout_height="5dp"/>
+         <!-- 全景视频播放  结束 -->
+    <!--  全景视频播放 开始 -->
+          <!-- 右下 -->
+         <FrameLayout
+             android:id="@+id/framecontainer4"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1" 
+             android:visibility="visible"
+             android:layout_marginLeft="5dp"
+             >
+             <ImageView 
+                 android:id="@+id/video_iv4"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/home_videobg4"
+                 android:scaleType="fitXY"
+                 android:visibility="gone"
+                 />
+            <!-- rtmp流  播放布局 开始-->
+             <SurfaceView
+            android:id="@+id/SurfaceView4_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" 
+            
+            />
+
+        <LinearLayout
+            android:id="@+id/LoadingView4_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Buffering"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!-- rtmp 流 播放布局结束 -->
+        <!--全景视频播放  开始  -->
+             <!-- <AbsoluteLayout
+                 android:id="@+id/AbsoluteLayout4"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                  >
+             </AbsoluteLayout> -->
+
+             <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp" 
+                 android:orientation="horizontal"
+                 android:layout_alignParentBottom="true"
+                 >
+
+                 
+                  <!--  <Button 
+                     android:id="@+id/touchbutton4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:text="方向感应"
+                     android:textColor="#fff"
+                     android:textSize="14sp"
+                     android:gravity="center"
+                       />
+                 <SeekBar
+                     android:id="@+id/scrubber4"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="40dp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginLeft="1dip"
+                     android:background="#AA000000"
+                     android:paddingLeft="22dp"
+                     android:paddingRight="22dp"
+                     android:paddingTop="6dp" /> -->
+                 <Button
+                     android:id="@+id/btn_fullScreen4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:gravity="center"
+                     android:text="全屏"
+                     android:textColor="#fff"
+                     android:textSize="14sp"
+                      />
+             </LinearLayout>
+             </RelativeLayout>
+         </FrameLayout>
+
+         <!-- 全景视频播放  结束 -->
+        <WebView 
+            android:id="@+id/videoFra_wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:layout_marginBottom="20dp">
+    <TextView 
+        android:id="@+id/video_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="因安全原因"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/videotoast_shape"
+        android:visibility="gone"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_bg"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/videoFra_iv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_video" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/tv_gray_color"
+            android:visibility="gone" />
+
+        <GridView
+            android:id="@+id/videoFra_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:choiceMode="singleChoice"
+            android:horizontalSpacing="10dp"
+            android:listSelector="@color/translate"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp"
+            android:visibility="gone" >
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>

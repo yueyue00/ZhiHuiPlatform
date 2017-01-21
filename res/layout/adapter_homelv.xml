@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_homelv_item" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_lvitem_height"
+        android:layout_marginLeft="@dimen/home_lvitem_height1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/home_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/home_lvitem_icon_margin"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/home_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/home_lvitem_tv_marginleft"
+            android:text="大会日程进度"
+            android:textSize="@dimen/home_lvitem_tvsize"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

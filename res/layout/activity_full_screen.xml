@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF000000"
+    >
+
+<!--  全景视频播放 开始 -->
+
+         <FrameLayout
+             android:id="@+id/full_framecontainer"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1" 
+             android:visibility="visible"
+             >
+             <!-- rtmp流  播放布局 开始-->
+             <SurfaceView
+            android:id="@+id/SurfaceView_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" 
+            
+            />
+
+        <LinearLayout
+            android:id="@+id/LoadingView_full"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Buffering"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!-- rtmp 流 播放布局结束 -->
+            <!--  <AbsoluteLayout
+                 android:id="@+id/full_AbsoluteLayout1"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" >
+             </AbsoluteLayout> -->
+             <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="40dp" 
+                 android:orientation="horizontal"
+                 android:layout_alignParentBottom="true"
+                 >
+
+                 
+                   <Button 
+                     android:id="@+id/full_touchbutton"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:text="方向感应"
+                     android:textColor="#fff"
+                     android:textSize="18sp"
+                     android:gravity="center"
+                     android:visibility="gone"
+                       />
+                 <SeekBar
+                     android:id="@+id/full_scrubber"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_height="40dp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginLeft="1dip"
+                     android:background="#AA000000"
+                     android:paddingLeft="22dp"
+                     android:paddingRight="22dp"
+                     android:paddingTop="6dp" 
+                     android:visibility="gone"
+                     />
+                 <Button
+                     android:id="@+id/full_exit_fullScreen"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_marginLeft="1dp"
+                     android:background="#AA000000"
+                     android:gravity="center"
+                     android:text="退出全屏"
+                     android:textColor="#fff"
+                     android:textSize="18sp"
+                      />
+             </LinearLayout>
+             </RelativeLayout>
+         </FrameLayout>
+
+         <!-- 全景视频播放  结束 -->
+</LinearLayout>

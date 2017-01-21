@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/big_home_bg_nor" >
+
+    <ImageView
+        android:id="@+id/iv_homeHead"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/big_home_img_head" />
+
+    <Button
+        android:id="@+id/home_xiaoshibao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/home_xiaoshibao_big_selector" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="1035dp"
+        android:layout_marginTop="611dp"
+        android:src="@drawable/big_home_img_middleframe_nor" />
+
+    <TextView
+        android:id="@+id/tv_homeTitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal"
+        android:text="丝绸之路（敦煌）国际文化博览会"
+        android:textColor="@color/text_blue"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_homeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_homeTitle1"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="中医药文化和健康产业国际论坛会务指挥平台"
+        android:textColor="@color/text_blue"
+        android:textSize="23sp"
+        android:visibility="gone" />
+    <!-- 标题下面的部分 -->
+
+    <LinearLayout
+        android:id="@+id/linaer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_homeHead"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <!-- 左侧部分 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.24"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_homeLeftFrame"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/big_home_img_leftframe_nor"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.1"
+                    android:orientation="horizontal"
+                    android:paddingTop="65dp" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/big_home_img_leftbar_nor" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/big_home_img_now_nor"
+                            android:orientation="vertical"
+                            android:paddingLeft="40dp" >
+
+                            <TextView
+                                android:id="@+id/tv_title_now"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/home_nowTitle_marginT"
+                                android:text=""
+                                android:textColor="@color/text_blue"
+                                android:textSize="28sp" />
+
+                            <TextView
+                                android:id="@+id/tv_host_now"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text=""
+                                android:textColor="@color/text_blue"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:id="@+id/tv_chargePerson_now"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text=""
+                                android:textColor="@color/text_blue"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:id="@+id/tv_connectPerson_now"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text=""
+                                android:textColor="@color/text_blue"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:id="@+id/tv_empty_now"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="@color/text_blue"
+                                android:textSize="28sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/big_home_img_next_nor"
+                            android:orientation="vertical"
+                            android:paddingLeft="40dp" >
+
+                            <TextView
+                                android:id="@+id/tv_title_next"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="40dp"
+                                android:text=""
+                                android:textColor="@color/text_green"
+                                android:textSize="28sp" />
+
+                            <TextView
+                                android:id="@+id/tv_host_next"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text=""
+                                android:textColor="@color/text_green"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:id="@+id/tv_chargePerson_next"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text=""
+                                android:textColor="@color/text_green"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:id="@+id/tv_connectPerson_next"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text=""
+                                android:textColor="@color/text_green"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:id="@+id/tv_empty_next"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textColor="@color/text_green"
+                                android:textSize="28sp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="13dp"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/big_home_img_rightbar_nor" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.9"
+                    android:gravity="center" >
+
+                    <LinearLayout
+                        android:id="@+id/tv_home_time1_linear"
+                        android:layout_width="80dp"
+                        android:layout_height="110dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="17dp"
+                        android:background="@drawable/big_home_icon_right_nor"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_home_time1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/text_blue"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/tv_home_time1_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text_blue"
+                            android:textSize="28sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1" >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="95dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/big_home_img_gdt_nor_new" />
+
+                        <com.smartdot.wenbo.controlcenter.customview.HorizontalListView
+                            android:id="@+id/horizontalListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="34dp" >
+                        </com.smartdot.wenbo.controlcenter.customview.HorizontalListView>
+                        <!--
+                        <com.lixiaoming.myapptest.HorizontalListView
+                            android:id="@+id/horizontalListView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+                        </com.lixiaoming.myapptest.HorizontalListView>
+                        -->
+
+                        <TextView
+                            android:id="@+id/home_horizonal_tvEmpty"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="当前天无数据"
+                            android:textColor="@color/text_blue"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/home_tv_currentTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/big_home_bg_currenttime_nor"
+                                android:gravity="center"
+                                android:paddingBottom="1dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="1dp"
+                                android:text="当前时间：08：20"
+                                android:textColor="@color/black"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tv_home_time2_linear"
+                        android:layout_width="80dp"
+                        android:layout_height="110dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="17dp"
+                        android:background="@drawable/big_home_icon_left_nor"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv_home_time2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/text_blue"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/tv_home_time2_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/text_blue"
+                            android:textSize="28sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- ——################################################################## -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_hotel_state" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/home_vipLeave_tv"
+                        android:layout_marginTop="@dimen/home_vipLeave_tv"
+                        android:text="嘉\n宾\n抵\n离\n状\n态"
+                        android:textColor="@color/text_red" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/home_hotel_state" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/re_stateForLeave"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.4"
+                    android:background="@drawable/big_home_img_lbframe_nor" >
+
+                    <WebView
+                        android:id="@+id/wv_home_vipLeave"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:layerType="software" >
+                    </WebView>
+
+                    <View
+                        android:id="@+id/vipLeave_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="@dimen/home_video_marginB"
+                        android:layout_marginLeft="@dimen/home_video_marginL"
+                        android:layout_marginRight="@dimen/home_video_marginR"
+                        android:layout_marginTop="@dimen/home_video_marginT"
+                        android:src="@drawable/btn_video_play"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:id="@+id/linaer_hotel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="18dp"
+                    android:layout_weight="1.6"
+                    android:background="@drawable/big_home_img_lmframe_nor" >
+
+                    <WebView
+                        android:id="@+id/wv_home_hotelInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="45dp"
+                        android:background="#00000000"
+                        android:layerType="software" >
+                    </WebView>
+
+                    <View
+                        android:id="@+id/hotelInfo_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 中间部分 -->
+
+        <LinearLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <!-- 右侧部分 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_homeRightFrame"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/big_home_img_rightframe_nor"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_video_homeMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/big_home_btn_more_nor" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/home_iv_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="35dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="15dp"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="7dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/main_color" >
+
+                            <FrameLayout
+                                android:id="@+id/framecontainer_1_big"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:background="@color/white" >
+
+                                <!-- rtmp流  播放布局 开始 -->
+
+                                <SurfaceView
+                                    android:id="@+id/SurfaceView1_big"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center" />
+
+                                <LinearLayout
+                                    android:id="@+id/LoadingView1_big"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <ProgressBar
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Buffering"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+                                <!-- rtmp 流 播放布局结束 -->
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="2dp"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/home_video_qp1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:orientation="vertical" >
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/big_home_btn_qp_nor" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/home_video_motion1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|right"
+                                    android:orientation="vertical"
+                                    android:visibility="gone" >
+
+                                    <ImageView
+                                        android:id="@+id/home_iv_videoMotion1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/big_home_btn_fxgy_nor" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_weight="1"
+                            android:background="@color/main_color" >
+
+                            <FrameLayout
+                                android:id="@+id/framecontainer_2_big"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:background="@color/white" >
+
+                                <!-- rtmp流  播放布局 开始 -->
+
+                                <SurfaceView
+                                    android:id="@+id/SurfaceView2_big"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center" />
+
+                                <LinearLayout
+                                    android:id="@+id/LoadingView2_big"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <ProgressBar
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Buffering"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+                                <!-- rtmp 流 播放布局结束 -->
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="2dp"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/home_video_qp2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:orientation="vertical" >
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/big_home_btn_qp_nor" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/home_video_motion2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|right"
+                                    android:orientation="vertical"
+                                    android:visibility="gone" >
+
+                                    <ImageView
+                                        android:id="@+id/home_iv_videoMotion2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/big_home_btn_fxgy_nor" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@color/main_color" >
+
+                            <FrameLayout
+                                android:id="@+id/framecontainer_3_big"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:background="@color/white" >
+
+                                <!-- rtmp流  播放布局 开始 -->
+
+                                <SurfaceView
+                                    android:id="@+id/SurfaceView3_big"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center" />
+
+                                <LinearLayout
+                                    android:id="@+id/LoadingView3_big"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <ProgressBar
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Buffering"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+                                <!-- rtmp 流 播放布局结束 -->
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="2dp"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/home_video_qp3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:orientation="vertical" >
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/big_home_btn_qp_nor" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/home_video_motion3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|right"
+                                    android:orientation="vertical"
+                                    android:visibility="gone" >
+
+                                    <ImageView
+                                        android:id="@+id/home_iv_videoMotion3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/big_home_btn_fxgy_nor" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_weight="1"
+                            android:background="@color/main_color" >
+
+                            <FrameLayout
+                                android:id="@+id/framecontainer_4_big"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="2dp"
+                                android:background="@color/white" >
+
+                                <!-- rtmp流  播放布局 开始 -->
+
+                                <SurfaceView
+                                    android:id="@+id/SurfaceView4_big"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center" />
+
+                                <LinearLayout
+                                    android:id="@+id/LoadingView4_big"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal" >
+
+                                    <ProgressBar
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:text="Buffering"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="20sp" />
+                                </LinearLayout>
+                                <!-- rtmp 流 播放布局结束 -->
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="2dp"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/home_video_qp4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom"
+                                    android:orientation="vertical" >
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/big_home_btn_qp_nor" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/home_video_motion4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|right"
+                                    android:orientation="vertical"
+                                    android:visibility="gone" >
+
+                                    <ImageView
+                                        android:id="@+id/home_iv_videoMotion4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/big_home_btn_fxgy_nor" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/home_hotelInfo_linear_marginR"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/home_hotelInfo_linear_marginT"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_hotel_green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/home_hotelInfo_tv_marginT"
+                            android:text="已入住"
+                            android:textColor="@color/text_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_hotel_yellow" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/home_hotelInfo_tv_marginT"
+                            android:text="工作用房"
+                            android:textColor="@color/text_yellow" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="@dimen/home_hotelInfo_linear_marginB"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_hotel_orange" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/home_hotelInfo_tv_marginT"
+                            android:text="空房间"
+                            android:textColor="@color/text_orange" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/frame_connect"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="18dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/big_home_img_rmframe_nor" >
+
+                    <WebView
+                        android:id="@+id/wv_home_connecter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="45dp"
+                        android:background="#00000000"
+                        android:layerType="software" >
+                    </WebView>
+
+                    <View
+                        android:id="@+id/connect_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame_worker"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/big_home_img_rbframe_nor" >
+
+                    <WebView
+                        android:id="@+id/wv_home_worker"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginTop="45dp"
+                        android:background="#00000000"
+                        android:layerType="software" >
+                    </WebView>
+
+                    <View
+                        android:id="@+id/worker_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_layout" />
+
+    <RadioGroup
+        android:id="@+id/manage_rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/manage_radiogroup_height"
+        android:layout_marginBottom="@dimen/manage_radiogroup_margintop"
+        android:layout_marginLeft="@dimen/manage_radiogroup_marginleft"
+        android:layout_marginRight="@dimen/manage_radiogroup_marginleft"
+        android:layout_marginTop="@dimen/manage_radiogroup_margintop"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radiobutton_manage_group"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="-1dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_guestrb_leftbg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingRight="-1dp"
+            android:text="会务群组"
+            android:textAlignment="viewEnd"
+            android:textColor="@drawable/selector_guestrb_textcolor"
+            android:textSize="@dimen/home_left_title_tvsize" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_manage_renyuan"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_guestrb_midbg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="会务人员"
+            android:textAlignment="viewEnd"
+            android:textColor="@drawable/selector_guestrb_textcolor"
+            android:textSize="@dimen/home_lvitem_tvsize" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_manage_history"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="-1dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_guestrb_rightbg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="会务聊天"
+            android:textAlignment="viewEnd"
+            android:textColor="@drawable/selector_guestrb_textcolor"
+            android:textSize="@dimen/home_left_title_tvsize" />
+    </RadioGroup>
+
+    <!--
+         <android.support.v4.view.ViewPager
+        android:id="@+id/manage_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+
+            <ListView
+                android:id="@+id/manage_group_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:listSelector="@color/importguest_select_item"
+                android:visibility="visible" />
+
+            <ListView
+                android:id="@+id/manage_renyuan_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:choiceMode="singleChoice"
+                android:listSelector="@color/importguest_select_item"
+                android:visibility="gone" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/manage_history_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/nodatafound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <FrameLayout
+            android:id="@+id/manage_frame_group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</LinearLayout>

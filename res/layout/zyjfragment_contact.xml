@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xiaoguo_contact_search"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/left_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+
+            <com.smartdot.wenbo.controlcenter.customview.HorizontalListView
+                android:id="@+id/lv_horzontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30dp"
+                android:background="@color/xiaoguo_contact_bg" />
+
+            <LinearLayout
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35dp"
+                android:background="@color/main_color"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_search"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_28dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/shape_baidumap_search"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/search_iv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/search_btn" />
+
+                    <EditText
+                        android:id="@+id/search_location"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:gravity="left|center_vertical"
+                        android:hint="搜索"
+                        android:singleLine="true"
+                        android:textColor="@color/text_details"
+                        android:textColorHint="@color/lightgray"
+                        android:textSize="14dp"
+                        android:typeface="sans" />
+
+                    <TextView
+                        android:id="@+id/search_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/shape_baidumap_searchbtn"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="搜索"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:choiceMode="singleChoice"
+                android:listSelector="@color/translate" />
+
+            <TextView
+                android:id="@+id/nodatafound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lightgray" />
+
+        <LinearLayout
+            android:id="@+id/import_guest_right_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/beijing"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <RadioGroup
+                android:id="@+id/important_vg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/manage_radiogroup_height"
+                android:layout_marginBottom="@dimen/manage_radiogroup_margintop"
+                android:layout_marginLeft="@dimen/importguest_radiogroup_marginleft"
+                android:layout_marginRight="@dimen/importguest_radiogroup_marginleft"
+                android:layout_marginTop="@dimen/manage_radiogroup_margintop"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radiobutton_richeng"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_guestrb_leftbg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="个人信息"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@drawable/selector_guestrb_textcolor"
+                    android:textSize="@dimen/home_lvitem_tvsize" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_xingcheng"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_guestrb_midbg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="个人行程"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@drawable/selector_guestrb_textcolor"
+                    android:textSize="@dimen/home_lvitem_tvsize" />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_fwrenyuan"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_guestrb_rightbg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="服务人员"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@drawable/selector_guestrb_textcolor"
+                    android:textSize="@dimen/home_lvitem_tvsize" />
+            </RadioGroup>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/guest_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/tuan_vp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/import_guest_conversition"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/beijing"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/conversition_title_bg" >
+
+                <ImageView
+                    android:id="@+id/conversition_backiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="6dp"
+                    android:src="@drawable/wuzhen_back" />
+
+                <TextView
+                    android:id="@+id/conversition_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="title"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/import_guest_rongy_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

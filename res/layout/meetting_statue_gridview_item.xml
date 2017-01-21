@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/dhxz_grid_color"
+    android:gravity="center"
+    >
+  <LinearLayout 
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:background="@drawable/bg_dhxz_peoplecount"
+      android:gravity="center"
+      android:layout_marginTop="10dp"
+      > 
+  <TextView 
+         android:id="@+id/grid_item_tv_count"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="120人"
+         android:gravity="center"
+         android:textSize="18sp"
+         android:textColor="@color/main_color"
+       />
+</LinearLayout>
+<!-- <TextView 
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:singleLine="true"
+    android:textColor="@color/main_color"
+    android:layout_marginTop="15dp"
+    /> -->
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_color"
+        android:layout_marginTop="15dp"/>
+    <TextView 
+        android:id="@+id/grid_item_tv_hotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="会场1"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/meetingState_text_huichang"
+        android:textColor="@color/tv_gray_color"
+         android:padding="10dp"
+         />
+    <TextView 
+        android:id="@+id/grid_item_tv_shortname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="分论1"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/meetingState_text"/>
+</LinearLayout>

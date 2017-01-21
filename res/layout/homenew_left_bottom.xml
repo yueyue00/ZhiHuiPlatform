@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="@dimen/home_vipLeave_marginT"
+    android:layout_weight="2"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/home_vipLeave_linear_marginL"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_hotel_state" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/home_vipLeave_tv"
+            android:layout_marginTop="@dimen/home_vipLeave_tv"
+            android:text="嘉\n宾\n抵\n离\n状\n态"
+            android:textColor="@color/text_red" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_hotel_state" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_stateForLeave"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.4"
+        android:background="@drawable/home_img_leftbottom_nor" >
+
+        <WebView
+            android:id="@+id/wv_home_vipLeave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/home_hotelInfo_marginB"
+            android:layout_marginLeft="@dimen/home_hotelInfo_marginL"
+            android:layout_marginRight="@dimen/home_hotelInfo_marginR"
+            android:layout_marginTop="@dimen/home_hotelInfo_marginT"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:layerType="software" >
+        </WebView>
+
+        <View
+            android:id="@+id/vipLeave_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/home_video_marginB"
+            android:layout_marginLeft="@dimen/home_video_marginL"
+            android:layout_marginRight="@dimen/home_video_marginR"
+            android:layout_marginTop="@dimen/home_video_marginT"
+            android:src="@drawable/btn_video_play"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/home_view3_width"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/linaer_hotel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/home_frame_vipleave_marginB"
+        android:layout_weight="1.6"
+        android:background="@drawable/home_img_leftmiddle_nor" >
+
+        <WebView
+            android:id="@+id/wv_home_hotelInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/home_webview_margin"
+            android:layout_marginLeft="@dimen/home_webview_marginL"
+            android:layout_marginRight="@dimen/home_webview_marginR"
+            android:layout_marginTop="@dimen/home_webview_margin"
+            android:background="#00000000"
+            android:layerType="software" >
+        </WebView>
+
+        <View
+            android:id="@+id/hotelInfo_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

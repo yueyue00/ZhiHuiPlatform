@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="@dimen/home_rightBottom_linear_marginT"
+    android:layout_weight="2"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/frame_connect"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/home_frame_connect_marginB"
+        android:layout_weight="1"
+        android:background="@drawable/home_frame_middle" >
+
+        <WebView
+            android:id="@+id/wv_home_connecter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/home_rightBottom_marginB"
+            android:layout_marginLeft="@dimen/home_rightBottom_marginL"
+            android:layout_marginRight="@dimen/home_rightBottom_marginR"
+            android:layout_marginTop="@dimen/home_rightBottom_marginT"
+            android:background="#00000000"
+            android:layerType="software" >
+        </WebView>
+
+        <View
+            android:id="@+id/connect_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_worker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/home_fraWorker_marginL"
+        android:layout_weight="1"
+        android:background="@drawable/home_carsource" >
+
+        <WebView
+            android:id="@+id/wv_home_worker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/home_rightBottom_marginB"
+            android:layout_marginLeft="@dimen/home_rightBottom_marginL"
+            android:layout_marginRight="@dimen/home_rightBottom_marginR"
+            android:layout_marginTop="@dimen/home_rightBottom_marginT"
+            android:background="#00000000"
+            android:layerType="software" >
+        </WebView>
+
+        <View
+            android:id="@+id/worker_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

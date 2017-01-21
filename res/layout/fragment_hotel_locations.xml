@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray" >
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!--
+             <com.baidu.mapapi.map.MapView
+            android:id="@+id/baidu_map_hotel2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/jiudian_bottom"
+            android:clickable="true" />
+        -->
+
+
+        <!--
+             <fragment
+            android:id="@+id/baidu_map_hotel2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/jiudian_bottom"
+            class="com.baidu.mapapi.map.SupportMapFragment" />
+        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5" >
+
+            <com.baidu.mapapi.map.TextureMapView
+                android:id="@+id/baidu_map_hotel2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.baidu.mapapi.map.TextureMapView>
+
+            <TextView
+                android:id="@+id/jiudian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_btn_baidu_dingwei"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="定位"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/hotel_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:background="@color/lightgray"
+                android:layout_marginLeft="@dimen/hotel_lv_left"
+                android:layout_marginRight="@dimen/hotel_lv_left"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/hotel_workused"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="蓝色代表:工作用房"
+                    android:textSize="@dimen/dimen_13dp"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/hotel_used"
+                   android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="红色代表:已入住"
+                    android:textSize="@dimen/dimen_13dp"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/hotel_count"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_13dp"
+                    android:text="灰色代表:房间总数"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/hotel_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/hotel_lv_left"
+                android:paddingRight="@dimen/hotel_lv_left" />
+
+            <TextView
+                android:id="@+id/nodatafound"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂无数据"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

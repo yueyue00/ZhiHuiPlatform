@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">指挥平台</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_home_new">HomeNewActivity</string>
+    <string name="title_activity_full_screen">FullScreenActivity</string>
+    <string name="title_activity_home_for_big">HomeForBigActivity</string>
+    <string name="title_activity_xsb">XsbActivity</string>
+    <string name="title_activity_xsb_big">XsbBigActivity</string>
+
+</resources>
